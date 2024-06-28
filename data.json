@@ -1,0 +1,295 @@
+{
+	"basics": {
+		"name": "Ignacio Jesús Revainera",
+		"label": "Desarrollador Web con más de 2 años dándole máxima prioridad a la accesibilidad, rendimiento y diseño de sus proyectos",
+		"image": "@/assets/profile-picture.webp",
+		"email": "ignacio.revainera@hotmail.com",
+		"phone": "(+54) 9 11 6484-4946",
+		"summary": "Estudiante de Licenciatura en Sistemas con experiencia en actividades administrativas, atención al cliente y desarrollo informático. Siempre abordo mis tareas de forma profesional, enfocado en mejorar las experiencias de usuario mediante una comunicación efectiva y un compromiso pleno con el cliente. Busco unirme a un equipo orientado a objetivos claros, donde se reconozcan mi proactividad y mi capacidad para trabajar en entornos dinámicos.",
+		"birth": "22 Mar 2002",
+		"location": {
+			"city": "Lomas de Zamora",
+			"state": "Buenos Aires",
+			"countryCode": "AR",
+			"region": "Argentina"
+		},
+		"profiles": [
+			{
+				"network": "Email",
+				"username": null,
+				"url": "mailto:ignacio.revainera@hotmail.com"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "ignaciorevainera",
+				"url": "https://linkedin.com/in/ignaciorevainera"
+			},
+			{
+				"network": "Github",
+				"username": "ignaciorevainera",
+				"url": "https://github.com/ignaciorevainera"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "CASA RAMI S.R.L.",
+			"position": "Administrativo",
+			"startDate": "Feb 2022",
+			"endDate": "Jul 2023",
+			"summary": [
+				"Gestión y actualización de archivos administrativos con Microsoft Excel y Word.",
+				"Supervisión del inventario para asegurar un control de stock eficiente.",
+				"Atención y soporte a clientes, gestionando consultas y solicitudes tanto presencialmente como telefónicamente.",
+				"Encargado de la preparación, empaque y control de calidad de pedidos."
+			],
+			"skills": [
+				"Microsoft Office",
+				"Comunicación efectiva",
+				"Gestión del tiempo",
+				"Trabajo en equipo",
+				"Atención al cliente",
+				"Control de stock",
+				"Control de calidad",
+				"Adaptabilidad"
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "Universidad Nacional de Lanús",
+			"degree": "Licenciatura en Sistemas",
+			"startDate": "Feb 2022",
+			"endDate": null,
+			"summary": [
+				"Programación en C",
+				"Bases de datos relacionales con MySQL",
+				"Análisis y diseño estructurado",
+				"Metodologías ágiles y tradicionales",
+				"Lenguaje ensamblador y jerarquía de memoria"
+			],
+			"highlights": [
+				"C",
+				"Microsoft Office",
+				"Algoritmos",
+				"Arquitectura en computadoras",
+				"Metodologías de desarrollo",
+				"Bases de datos"
+			]
+		}
+	],
+	"certificates": [
+		{
+			"title": "Curso \"Conviértete en Especialista en Excel (Office/Microsoft 365)\"",
+			"institution": "LinkedIn Learning",
+			"year": "2024"
+		},
+		{
+			"title": "Programación Web - Front End, Gestión de Proyectos e Inteligencia Emocional",
+			"institution": "BA Multiplica 2.0 - UTN - UBA Psicología",
+			"year": "2023"
+		},
+		{
+			"title": "Desarrollador de Sistemas en Proyecto HYS1 para Hotel Costa Azul",
+			"institution": "Instituto de Enseñanza Digital en asociación con Asociación Civil UPDN",
+			"year": "2021"
+		},
+		{
+			"title": "Curso Teórico - Práctico sobre Armado y Reparación de PC",
+			"institution": "Asociación Civil Unión de Padres por los Derechos de los Niños",
+			"year": "2021"
+		}
+	],
+	"skills": [
+		{
+			"name": "HTML",
+			"keywords": [
+				"Lenguaje de Marcado",
+				"Estructura Web",
+				"Frontend",
+				"Desarrollo Web"
+			]
+		},
+		{
+			"name": "CSS",
+			"keywords": [
+				"Estilo",
+				"Frontend",
+				"Diseño Web",
+				"Diseño Responsivo"
+			]
+		},
+		{
+			"name": "JavaScript",
+			"keywords": [
+				"Programación",
+				"Frontend",
+				"Backend",
+				"Desarrollo Web"
+			]
+		},
+		{
+			"name": "Tailwind CSS",
+			"keywords": [
+				"Framework CSS",
+				"Frontend",
+				"Diseño Responsivo",
+				"Desarrollo Web"
+			]
+		},
+		{
+			"name": "Astro Build",
+			"keywords": [
+				"Generador de Sitios Estáticos",
+				"Frontend",
+				"Backend",
+				"Desarrollo Web"
+			]
+		},
+		{
+			"name": "Bootstrap",
+			"keywords": [
+				"Framework CSS",
+				"Frontend",
+				"Diseño Responsivo",
+				"Componentes Web"
+			]
+		},
+		{
+			"name": "Git",
+			"keywords": [
+				"Control de Versiones",
+				"Desarrollo de Software",
+				"Línea de Comandos",
+				"Colaboración"
+			]
+		},
+		{
+			"name": "GitHub",
+			"keywords": [
+				"Control de Versiones",
+				"Repositorio de Código",
+				"Colaboración",
+				"Hospedaje Git"
+			]
+		},
+		{
+			"name": "Python",
+			"keywords": [
+				"Programación",
+				"Backend",
+				"Ciencia de Datos",
+				"Desarrollo Web"
+			]
+		},
+		{
+			"name": "Microsoft Excel",
+			"keywords": [
+				"Análisis de Datos",
+				"Hojas de Cálculo",
+				"Gestión de Datos",
+				"Microsoft Office"
+			]
+		},
+		{
+			"name": " Microsoft Word",
+			"keywords": [
+				"Creación de Documentos",
+				"Formato de Texto",
+				"Microsoft Office",
+				"Procesamiento de Textos"
+			]
+		},
+		{
+			"name": "Microsoft PowerPoint",
+			"keywords": [
+				"Presentaciones",
+				"Diseño de Diapositivas",
+				"Microsoft Office",
+				"Comunicación Visual"
+			]
+		},
+		{
+			"name": "C",
+			"keywords": [
+				"Programación",
+				"Programación de Sistemas",
+				"Desarrollo de Software",
+				"Rendimiento"
+			]
+		},
+		{
+			"name": "MySQL",
+			"keywords": [
+				"Base de Datos",
+				"Gestión de Datos",
+				"SQL",
+				"Desarrollo de Software"
+			]
+		},
+		{
+			"name": "PostgreSQL",
+			"keywords": [
+				"Base de Datos",
+				"Gestión de Datos",
+				"SQL",
+				"Desarrollo de Software"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "Español",
+			"fluency": "Nativo"
+		},
+		{
+			"language": "Inglés",
+			"fluency": "B1 | Intermedio"
+		}
+	],
+	"projects": [
+		{
+			"img": null,
+			"name": "Blog de Tecnología",
+			"isActive": true,
+			"description": "Blog de tecnología desarrollado con HTML, CSS y JavaScript. Cuenta con un diseño moderno y minimalista, y una estructura de carpetas organizada para facilitar la escalabilidad y mantenimiento del proyecto.",
+			"stack": ["HTML", "Tailwind CSS", "TypeScript", "Astro"],
+			"repository": "https://github.com/ignaciorevainera/blog-astro",
+			"deploy": "https://blog-astro-black.vercel.app/"
+		},
+		{
+			"img": null,
+			"name": "Ecommerce",
+			"isActive": true,
+			"description": " Repositorio de un proyecto e-commerce de venta de plantas y productos de botánica, desarrollado por los integrantes del Grupo 16 de Codo a Codo.",
+			"stack": [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Bootstrap",
+				"Python",
+				"Flask"
+			],
+			"repository": "https://github.com/ignaciorevainera/cac-python-24264-g16",
+			"deploy": "https://cac-python-24264-g16.vercel.app/"
+		},
+		{
+			"img": null,
+			"name": "Minimalist Portfolio",
+			"isActive": true,
+			"description": "Portafolio digital en Astro y Tailwind CSS: responsive, optimizado para impresión y con navegación innovadora mediante paleta de comandos (Ctrl + K). Una experiencia de usuario única que destaca habilidades y proyectos con estilo y funcionalidad.",
+			"stack": ["HTML", "Tailwind CSS", "TypeScript", "Astro"],
+			"repository": "https://github.com/ignaciorevainera/minimalist-portfolio",
+			"deploy": "https://minimalist-portfolio-dusky.vercel.app/"
+		},
+		{
+			"img": null,
+			"name": "Luxury",
+			"isActive": false,
+			"description": "Este proyecto es una página web para simular el sitio web de una concesionaria de autos de lujo.",
+			"stack": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+			"repository": "https://github.com/ignaciorevainera/concesionaria-luxury",
+			"deploy": "https://concesionaria-luxury.vercel.app/"
+		}
+	]
+}
