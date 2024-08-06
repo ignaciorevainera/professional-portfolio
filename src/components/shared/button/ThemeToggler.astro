@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<label
+	role="button"
+	for="theme-controller"
+	class="btn swap btn-neutral swap-rotate"
+>
+	<input
+		type="checkbox"
+		id="theme-controller"
+		class="theme-controller"
+		data-toggle-theme="dark,light"
+		data-act-class="ACTIVECLASS"
+	/>
+	<Icon id="moon-icon" name="ri:moon-fill" size={20} class="swap-off" />
+	<Icon id="sun-icon" name="ri:sun-fill" size={20} class="swap-on" />
+</label>

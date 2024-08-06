@@ -1,0 +1,72 @@
+---
+import { projects } from "@/data/data.json";
+import Section from "../shared/layout/Section.astro";
+import Heading2 from "../shared/text/Heading2.astro";
+import ButtonPrimary from "../shared/button/ButtonPrimary.astro";
+import Heading3 from "../shared/text/Heading3.astro";
+import { Icon } from "astro-icon/components";
+import Tag from "../shared/tag/Tag.astro";
+import TagList from "../shared/tag/TagList.astro";
+import Card from "../shared/layout/Card.astro";
+import ButtonNeutral from "../shared/button/ButtonNeutral.astro";
+import { Image } from "astro:assets";
+---
+
+<Section>
+	<Heading2 content="Proyectos" />
+	<ul class="grid grid-cols-1 gap-12 md:grid-cols-2">
+		{
+			projects.map((project) => (
+				<li class="indicator w-full">
+					{project.isActive && (
+						<span class="badge indicator-item badge-success badge-lg indicator-center indicator-top rounded p-3 font-semibold lg:indicator-end">
+							Activo
+						</span>
+					)}
+					<Card>
+						<img
+							src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+							alt={project.name}
+							slot="card-img"
+						/>
+						<div slot="card-body" class="flex h-full flex-col">
+							<div class="mb-4 flex-grow space-y-2">
+								<Heading3 content={project.name} />
+								<p>{project.description}</p>
+								<div>
+									<TagList>
+										{project.stack.map((skill) => (
+											<Tag content={skill} />
+										))}
+									</TagList>
+								</div>
+							</div>
+							<div class="card-actions justify-end">
+								<ButtonNeutral
+									content="Repositorio"
+									href={project.repository}
+									label={`Repositorio ${project.name}`}
+								>
+									<Icon
+										name="ri:code-s-slash-fill"
+										slot={"icon"}
+									/>
+								</ButtonNeutral>
+								<ButtonPrimary
+									content="Deploy"
+									href={project.deploy}
+									label={`Deploy ${project.name}`}
+								>
+									<Icon
+										name="ri:external-link-fill"
+										slot={"icon"}
+									/>
+								</ButtonPrimary>
+							</div>
+						</div>
+					</Card>
+				</li>
+			))
+		}
+	</ul>
+</Section>

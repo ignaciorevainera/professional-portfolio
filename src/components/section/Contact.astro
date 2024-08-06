@@ -1,0 +1,32 @@
+---
+import ButtonPrimary from "../shared/button/ButtonPrimary.astro";
+import Section from "../shared/layout/Section.astro";
+import Heading2 from "../shared/text/Heading2.astro";
+---
+
+<Section>
+	<Heading2 content="Contacto" />
+	<form method="post" class="flex flex-col gap-4">
+		<input
+			name="name"
+			autocomplete="name"
+			type="text"
+			placeholder="Nombre completo"
+			class="input input-lg input-bordered w-full"
+		/>
+		<input
+			name="email"
+			autocomplete="email"
+			type="email"
+			placeholder="Correo electrónico"
+			class="input input-lg input-bordered w-full"
+		/>
+		<textarea
+			name="message"
+			placeholder="Mensaje"
+			rows="4"
+			class="textarea textarea-bordered textarea-lg w-full resize-none"
+		></textarea>
+		<ButtonPrimary content="Enviar" label="Enviar" href="/" />
+	</form>
+</Section>

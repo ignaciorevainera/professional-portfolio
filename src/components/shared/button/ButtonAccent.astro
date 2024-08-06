@@ -1,0 +1,13 @@
+---
+interface Props {
+	content?: string;
+	href?: string;
+}
+
+const { content, href } = Astro.props;
+---
+
+<a class="btn btn-accent" href={href}>
+	<slot name="icon" />
+	{content}
+</a>

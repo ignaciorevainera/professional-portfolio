@@ -1,0 +1,14 @@
+---
+import { skills } from "@/data/data.json";
+import { Icon } from "astro-icon/components";
+---
+
+<div
+	class="logos group-hover:animation-pause inline-block w-max animate-slide-left-infinite"
+>
+	{
+		skills.map((skill) => (
+			<Icon name={skill.icon} size={100} class={"mx-6 inline"} />
+		))
+	}
+</div>

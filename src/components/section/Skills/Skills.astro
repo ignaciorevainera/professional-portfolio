@@ -1,0 +1,15 @@
+---
+import Section from "@/components/shared/layout/Section.astro";
+import Heading2 from "@/components/shared/text/Heading2.astro";
+import SkillsSlider from "@/components/section/Skills/SkillsSlider.astro";
+---
+
+<Section>
+	<Heading2 content="Skills" />
+	<div
+		class="group overflow-hidden whitespace-nowrap py-10 [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]"
+	>
+		<SkillsSlider />
+		<SkillsSlider />
+	</div>
+</Section>

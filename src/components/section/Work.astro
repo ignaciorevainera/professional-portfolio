@@ -1,0 +1,72 @@
+---
+import { work } from "@/data/data.json";
+import Section from "../shared/layout/Section.astro";
+import Heading2 from "@/components/shared/text/Heading2.astro";
+import Card from "../shared/layout/Card.astro";
+import Tag from "@/components/shared/tag/Tag.astro";
+import TagList from "../shared/tag/TagList.astro";
+import Heading3 from "../shared/text/Heading3.astro";
+import Heading4 from "../shared/text/Heading4.astro";
+import ItemList from "../shared/list/ItemList.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Section>
+	<Heading2 content="Experiencia laboral" />
+	{
+		work.map((work) => {
+			const startDate = new Date(work.startDate);
+			const endDate = work.endDate
+				? new Date(work.endDate)
+				: "Actualidad";
+
+			return (
+				<Card>
+					<div slot="card-body">
+						<div class="md:flex md:flex-row md:items-center">
+							<div class="md:flex-grow">
+								<Heading3 content={work.position} />
+								<Heading4 content={work.company} />
+							</div>
+							<div>
+								<time datetime={startDate.toISOString()}>
+									{startDate.toLocaleDateString("es", {
+										year: "numeric",
+										month: "short",
+									})}
+								</time>
+								<span> - </span>
+								{endDate !== "Actualidad" ? (
+									<time datetime={endDate.toISOString()}>
+										{endDate.toLocaleDateString("es", {
+											year: "numeric",
+											month: "short",
+										})}
+									</time>
+								) : (
+									<span>{endDate}</span>
+								)}
+							</div>
+						</div>
+						<ItemList>
+							{work.summary.map((item) => (
+								<li class="flex items-center gap-2">
+									<Icon
+										name="ri:check-fill"
+										class={"size-8 shrink-0 text-green-600"}
+									/>
+									{item}
+								</li>
+							))}
+						</ItemList>
+						<TagList>
+							{work.skills.map((skill) => (
+								<Tag content={skill} />
+							))}
+						</TagList>
+					</div>
+				</Card>
+			);
+		})
+	}
+</Section>

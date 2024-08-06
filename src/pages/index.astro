@@ -1,8 +1,20 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import Hero from "@/components/section/Hero.astro";
+import About from "@/components/section/About.astro";
+import Work from "@/components/section/Work.astro";
+import Education from "@/components/section/Education.astro";
+import Skills from "@/components/section/Skills/Skills.astro";
+import Projects from "@/components/section/Projects.astro";
+import Contact from "@/components/section/Contact.astro";
 ---
 
 <MainLayout>
-	<h1>Welcome to Astro</h1>
-	<p>Hello, Astro! This is a simple Astro app.</p>
+	<Hero />
+	<Work />
+	<Education />
+	<Projects />
+	<Skills />
+	<About />
+	<Contact />
 </MainLayout>

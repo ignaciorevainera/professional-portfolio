@@ -1,13 +1,19 @@
 ---
-import BaseHead from "@/components/BaseHead.astro";
+import BaseHead from "@/components/shared/layout/BaseHead.astro";
+import Header from "@/components/shared/layout/Header.astro";
+import Footer from "@/components/shared/layout/Footer.astro";
+import "@/styles/global.css";
+import "@fontsource-variable/outfit";
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 	<BaseHead />
 	<body>
-		<main>
+		<main class="mx-auto max-w-[90ch]">
+			<Header />
 			<slot />
 		</main>
+		<Footer />
 	</body>
 </html>

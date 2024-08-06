@@ -1,0 +1,73 @@
+---
+import { education } from "@/data/data.json";
+import Section from "../shared/layout/Section.astro";
+import Heading2 from "../shared/text/Heading2.astro";
+import Heading3 from "../shared/text/Heading3.astro";
+import Heading4 from "../shared/text/Heading4.astro";
+import Card from "../shared/layout/Card.astro";
+import Tag from "../shared/tag/Tag.astro";
+import TagList from "../shared/tag/TagList.astro";
+import ItemList from "../shared/list/ItemList.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Section>
+	<Heading2 content="Educación" />
+	{
+		education.map((education) => {
+			const startDate = new Date(education.startDate);
+
+			const endDate = education.endDate
+				? new Date(education.endDate)
+				: "Actualidad";
+
+			return (
+				<Card>
+					<div slot="card-body">
+						<div class="md:flex md:flex-row md:items-center">
+							<div class="md:flex-grow">
+								<Heading3 content={education.degree} />
+								<Heading4 content={education.institution} />
+							</div>
+							<div>
+								<time datetime={startDate.toISOString()}>
+									{startDate.toLocaleDateString("es", {
+										year: "numeric",
+										month: "short",
+									})}
+								</time>
+								<span> - </span>
+								{endDate !== "Actualidad" ? (
+									<time datetime={endDate.toISOString()}>
+										{endDate.toLocaleDateString("es", {
+											year: "numeric",
+											month: "short",
+										})}
+									</time>
+								) : (
+									<span>{endDate}</span>
+								)}
+							</div>
+						</div>
+						<ItemList>
+							{education.summary.map((item) => (
+								<li class="flex items-center gap-2">
+									<Icon
+										name="ri:check-fill"
+										class={"size-8 shrink-0 text-green-600"}
+									/>
+									{item}
+								</li>
+							))}
+						</ItemList>
+						<TagList>
+							{education.skills.map((highlight) => (
+								<Tag content={highlight} />
+							))}
+						</TagList>
+					</div>
+				</Card>
+			);
+		})
+	}
+</Section>

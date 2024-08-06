@@ -1,4 +1,6 @@
 ---
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+import OutfitVariable from "@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 interface Props {
@@ -15,10 +17,53 @@ const {
 ---
 
 <head>
+	{/* Theme Controller */}
+	<script is:inline>
+		// ☝️ This script prevent the FART effect.
+		if (localStorage.getItem("theme") === null) {
+			document.documentElement.setAttribute("data-theme", "light");
+		} else
+			document.documentElement.setAttribute(
+				"data-theme",
+				localStorage.getItem("theme"),
+			);
+		// "theme" LocalStorage value is set by the package to remember user preference.
+		// The value is checked and applyed before rendering anything.
+	</script>
+	<script>
+		import { themeChange } from "theme-change";
+		themeChange();
+		// 👆 you could import the CDN directly instead of these two lines
+	</script>
+
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	{/* Favicon */}
 	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 	<link rel="icon" type="image/png" href="/favicon/favicon.png" />
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="/favicon/apple-touch-icon.png"
+	/>
+	<link rel="manifest" href="/favicon/site.webmanifest" />
+	<link
+		rel="mask-icon"
+		href="/favicon/safari-pinned-tab.svg"
+		color="#2b5797"
+	/>
+	<meta name="msapplication-TileColor" content="#2b5797" />
+	<meta name="theme-color" content="#ffffff" />
+
+	{/* Fonts */}
+	<link
+		rel="preload"
+		href={OutfitVariable}
+		as="font"
+		type="font/woff2"
+		crossorigin="anonymous"
+	/>
 
 	{/* Canonical URL */}
 	<link rel="canonical" href={canonicalURL} />
@@ -43,4 +88,6 @@ const {
 	<meta property="twitter:title" content={pageTitle} />
 	<meta property="twitter:description" content={description} />
 	<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+	<ViewTransitions />
 </head>
