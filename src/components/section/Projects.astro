@@ -14,12 +14,12 @@ import { Image } from "astro:assets";
 
 <Section>
 	<Heading2 content="Proyectos" />
-	<ul class="grid grid-cols-1 gap-12 md:grid-cols-2">
+	<ul class="flex flex-wrap gap-10 *:flex-shrink *:flex-grow *:basis-96">
 		{
 			projects.map((project) => (
 				<li class="indicator w-full">
 					{project.isActive && (
-						<span class="badge indicator-item badge-success badge-lg indicator-center indicator-top rounded p-3 font-semibold lg:indicator-end">
+						<span class="badge indicator-item badge-success badge-lg indicator-center indicator-top rounded p-3 font-semibold">
 							Activo
 						</span>
 					)}
