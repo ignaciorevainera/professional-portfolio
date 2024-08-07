@@ -3,7 +3,7 @@
 		"name": "Ignacio Jesús Revainera",
 		"label": "Desarrollador Web Front-End dándole máxima prioridad a la accesibilidad, rendimiento y diseño de sus proyectos",
 		"available": true,
-		"image": "@/assets/profile-picture.webp",
+		"image": "/src/assets/profile-picture.webp",
 		"email": "ignacio.revainera@hotmail.com",
 		"phone": "(+54) 9 11 6484-4946",
 		"summary": "Estudiante de Licenciatura en Sistemas con experiencia en actividades administrativas, atención al cliente y desarrollo informático. Siempre abordo mis tareas de forma profesional, enfocado en mejorar las experiencias de usuario mediante una comunicación efectiva y un compromiso pleno con el cliente. Busco unirme a un equipo orientado a objetivos claros, donde se reconozcan mi proactividad y mi capacidad para trabajar en entornos dinámicos.",
@@ -299,7 +299,8 @@
 	],
 	"projects": [
 		{
-			"img": null,
+			"img-webp": "/src/assets/projects/adoptify.webp",
+			"img-avif": "/src/assets/projects/adoptify.avif",
 			"name": "Adoptify",
 			"isActive": true,
 			"description": "Plataforma web de adopción de mascotas donde refugios pueden dar a conocer a sus mascotas disponibles a posibles adoptantes. Este es un proyecto full-stack desarrollado por el grupo c19-42 durante el programa de simulación laboral de No Country.",
@@ -308,7 +309,8 @@
 			"deploy": "https://c19-42-n-java-react.vercel.app/"
 		},
 		{
-			"img": null,
+			"img-webp": "/src/assets/projects/blog-astro.webp",
+			"img-avif": "/src/assets/projects/blog-astro.avif",
 			"name": "Blog de Tecnología",
 			"isActive": true,
 			"description": "Blog de tecnología desarrollado con HTML, CSS y JavaScript. Cuenta con un diseño moderno y minimalista, y una estructura de carpetas organizada para facilitar la escalabilidad y mantenimiento del proyecto.",
@@ -317,8 +319,9 @@
 			"deploy": "https://blog-astro-black.vercel.app/"
 		},
 		{
-			"img": null,
-			"name": "Ecommerce",
+			"img-webp": "/src/assets/projects/e-commerce.webp",
+			"img-avif": "/src/assets/projects/e-commerce.avif",
+			"name": "Tienda Online",
 			"isActive": true,
 			"description": " Repositorio de un proyecto e-commerce de venta de plantas y productos de botánica, desarrollado por los integrantes del Grupo 16 de Codo a Codo.",
 			"stack": [
@@ -333,7 +336,8 @@
 			"deploy": "https://cac-python-24264-g16.vercel.app/"
 		},
 		{
-			"img": null,
+			"img-webp": "/src/assets/projects/minimalist-portfolio.webp",
+			"img-avif": "/src/assets/projects/minimalist-portfolio.avif",
 			"name": "Minimalist Portfolio",
 			"isActive": true,
 			"description": "Portafolio digital en Astro y Tailwind CSS: responsive, optimizado para impresión y con navegación innovadora mediante paleta de comandos (Ctrl + K). Una experiencia de usuario única que destaca habilidades y proyectos con estilo y funcionalidad.",
@@ -342,7 +346,8 @@
 			"deploy": "https://minimalist-portfolio-dusky.vercel.app/"
 		},
 		{
-			"img": null,
+			"img-webp": "/src/assets/projects/luxury.webp",
+			"img-avif": "/src/assets/projects/luxury.avif",
 			"name": "Luxury",
 			"isActive": false,
 			"description": "Este proyecto es una página web para simular el sitio web de una concesionaria de autos de lujo.",

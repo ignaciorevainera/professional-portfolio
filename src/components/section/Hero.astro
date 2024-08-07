@@ -3,9 +3,14 @@ import { basics } from "@/data/data.json";
 import Heading1 from "@/components/shared/text/Heading1.astro";
 import ButtonPrimary from "@/components/shared/button/ButtonPrimary.astro";
 import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
-import profileImage from "@/assets/profile-picture.webp";
+import { Image, Picture } from "astro:assets";
 import EmailCopy from "../shared/EmailCopy.astro";
+import type { ImageMetadata } from "astro";
+
+const profilePicture = import.meta.glob<{ default: ImageMetadata }>(
+	"@/assets/*profile*.{webp,avif}"
+);
+if (!profilePicture) throw new Error(`Foto de perfil no encontrada`);
 ---
 
 <section class="hero my-20">
@@ -15,9 +20,10 @@ import EmailCopy from "../shared/EmailCopy.astro";
 				<div
 					class="mx-auto w-1/2 rounded-full ring ring-neutral ring-offset-2 ring-offset-base-100 md:w-3/4"
 				>
-					<Image
-						src={profileImage}
-						alt={basics.label}
+					<Picture
+						src={profilePicture[Object.keys(profilePicture)[0]]()}
+						formats={["webp", "avif"]}
+						alt={basics.name}
 						class={"aspect-square"}
 					/>
 				</div>

@@ -1,0 +1,17 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+	src: string;
+	alt: string;
+}
+
+const { src, alt } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+	"@/assets/projects/*.{webp,avif}"
+);
+if (!images[src]) throw new Error(`${src} no encontrada`);
+---
+
+<Image src={images[src]()} alt={alt} />
