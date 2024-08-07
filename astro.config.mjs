@@ -5,13 +5,13 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://localhost:4321",
+	site: "https://professional-portfolio-theta-three.vercel.app/",
 	integrations: [
 		tailwind(),
 		sitemap({
 			i18n: {
 				defaultLocale: "es",
-				locales: ["es", "en"],
+				locales: { es: "es-AR", en: "en-US" },
 			},
 		}),
 		icon(),
