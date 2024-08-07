@@ -5,6 +5,7 @@ import ButtonPrimary from "@/components/shared/button/ButtonPrimary.astro";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import profileImage from "@/assets/profile-picture.webp";
+import EmailCopy from "../shared/EmailCopy.astro";
 ---
 
 <section class="hero my-20">
@@ -35,17 +36,22 @@ import profileImage from "@/assets/profile-picture.webp";
 						{basics.label}
 					</p>
 				</article>
-				<article class="space-x-2">
-					{
-						basics.profiles.map((profile) => (
-							<ButtonPrimary
-								href={profile.url}
-								label={`Ir a ${profile.network}`}
-							>
-								<Icon name={profile.icon} slot="icon" />
-							</ButtonPrimary>
-						))
-					}
+				<article
+					class="flex flex-grow flex-wrap items-center justify-center gap-2 md:justify-start"
+				>
+					<EmailCopy />
+					<div class="space-x-2">
+						{
+							basics.profiles.map((profile) => (
+								<ButtonPrimary
+									href={profile.url}
+									label={`Ir a ${profile.network}`}
+								>
+									<Icon name={profile.icon} slot="icon" />
+								</ButtonPrimary>
+							))
+						}
+					</div>
 				</article>
 			</div>
 		</section>
