@@ -1,0 +1,49 @@
+---
+import { basics } from "@/data/data.json";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="join">
+	<span
+		id="email"
+		class="input join-item flex select-none items-center border-neutral outline-none focus:outline-none"
+	>
+		{basics.email}
+	</span>
+	<a class="btn join-item" href=`mailto:${basics.email}`>
+		<Icon name="ri:mail-fill" />
+	</a>
+	<div
+		id="tooltip"
+		class="join-item tooltip tooltip-top tooltip-success lg:tooltip-right hover:before:opacity-0 hover:after:opacity-0"
+		data-tip="¡Copiado!"
+	>
+		<button class="btn join-item" onclick="copyToClipboard()">
+			<Icon name="ri:file-copy-fill" />
+		</button>
+	</div>
+</div>
+<script is:inline>
+	function copyToClipboard() {
+		const emailSpan = document.getElementById("email");
+		const emailText = emailSpan?.textContent;
+
+		if (emailText) {
+			navigator.clipboard.writeText(emailText).then(() => {
+				const tooltip = document.getElementById("tooltip");
+				tooltip?.classList.add("show-tooltip");
+
+				setTimeout(() => {
+					tooltip?.classList.remove("show-tooltip");
+				}, 3000);
+			});
+		}
+	}
+</script>
+<style>
+	.show-tooltip::before,
+	.show-tooltip::after {
+		opacity: 1;
+		transition: opacity 0.5s ease-in-out;
+	}
+</style>
