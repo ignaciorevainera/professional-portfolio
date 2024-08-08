@@ -1,10 +1,10 @@
 ---
 import { basics } from "@/data/data.json";
-import Heading1 from "@/components/shared/text/Heading1.astro";
-import ButtonPrimary from "@/components/shared/button/ButtonPrimary.astro";
 import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
-import EmailCopy from "../shared/EmailCopy.astro";
+import ButtonPrimary from "@/components/shared/button/ButtonPrimary.astro";
+import EmailCopy from "@components/shared/EmailCopy.astro";
+import Heading1 from "@/components/shared/text/Heading1.astro";
 import type { ImageMetadata } from "astro";
 
 const profilePicture = import.meta.glob<{ default: ImageMetadata }>(

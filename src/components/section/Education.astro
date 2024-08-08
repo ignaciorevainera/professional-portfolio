@@ -1,17 +1,17 @@
 ---
 import { education } from "@/data/data.json";
-import Section from "../shared/layout/Section.astro";
-import Heading2 from "../shared/text/Heading2.astro";
-import Heading3 from "../shared/text/Heading3.astro";
-import Heading4 from "../shared/text/Heading4.astro";
-import Card from "../shared/layout/Card.astro";
-import Tag from "../shared/tag/Tag.astro";
-import TagList from "../shared/tag/TagList.astro";
-import ItemList from "../shared/list/ItemList.astro";
 import { Icon } from "astro-icon/components";
+import Card from "@components/shared/layout/Card.astro";
+import Heading2 from "@components/shared/text/Heading2.astro";
+import Heading3 from "@components/shared/text/Heading3.astro";
+import Heading4 from "@components/shared/text/Heading4.astro";
+import ItemList from "@components/shared/list/ItemList.astro";
+import Section from "@components/shared/layout/Section.astro";
+import Tag from "@components/shared/tag/Tag.astro";
+import TagList from "@components/shared/tag/TagList.astro";
 ---
 
-<Section>
+<Section id="education">
 	<Heading2 content="Educación" />
 	{
 		education.map((education) => {
