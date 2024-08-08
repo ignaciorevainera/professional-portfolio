@@ -1,26 +1,28 @@
 ---
-import { basics } from "@/data/data.json";
+import { basics } from "@/data.json";
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="join">
+<div class="flex flex-wrap justify-center sm:join">
 	<span
 		id="email"
-		class="input join-item flex select-none items-center border-neutral outline-none focus:outline-none"
+		class="input join-item flex select-none items-center border-neutral text-xs outline-none focus:outline-none sm:text-base"
 	>
 		{basics.email}
 	</span>
-	<a class="btn join-item" href=`mailto:${basics.email}`>
-		<Icon name="ri:mail-fill" />
-	</a>
-	<div
-		id="tooltip"
-		class="join-item tooltip tooltip-top tooltip-success lg:tooltip-right hover:before:opacity-0 hover:after:opacity-0"
-		data-tip="¡Copiado!"
-	>
-		<button class="btn join-item" onclick="copyToClipboard()">
-			<Icon name="ri:file-copy-fill" />
-		</button>
+	<div class="join flex *:rounded-t-none sm:*:rounded-t-btn">
+		<a class="btn join-item" href=`mailto:${basics.email}`>
+			<Icon name="ri:mail-fill" />
+		</a>
+		<div
+			id="tooltip"
+			class="join-item tooltip tooltip-top tooltip-success lg:tooltip-right hover:before:opacity-0 hover:after:opacity-0"
+			data-tip="¡Copiado!"
+		>
+			<button class="btn join-item" onclick="copyToClipboard()">
+				<Icon name="ri:file-copy-fill" />
+			</button>
+		</div>
 	</div>
 </div>
 <script is:inline>
