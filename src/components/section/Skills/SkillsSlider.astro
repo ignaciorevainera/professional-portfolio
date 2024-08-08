@@ -1,14 +1,28 @@
 ---
-import { skills } from "@/data/data.json";
 import { Icon } from "astro-icon/components";
+import { skills } from "@/data/data.json";
+import IconAstro from "@/components/icons/IconAstro.astro";
+import IconGitHub from "@/components/icons/IconGitHub.astro";
 ---
 
 <div
 	class="logos group-hover:animation-pause inline-block w-max animate-slide-left-infinite"
 >
 	{
-		skills.map((skill) => (
-			<Icon name={skill.icon} size={100} class={"mx-6 inline"} />
-		))
+		skills.map((skill) => {
+			const size = 100;
+			const isAstro = skill.name === "Astro Build";
+			const isGitHub = skill.name === "GitHub";
+
+			if (isAstro) {
+				return <IconAstro size={size} class:list={"mx-6 inline"} />;
+			} else if (isGitHub) {
+				return <IconGitHub size={size} class:list={"mx-6 inline"} />;
+			} else {
+				return (
+					<Icon name={skill.icon} size={size} class={"mx-6 inline"} />
+				);
+			}
+		})
 	}
 </div>

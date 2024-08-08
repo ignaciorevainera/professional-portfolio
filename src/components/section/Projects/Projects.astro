@@ -1,18 +1,19 @@
 ---
-import { projects } from "@/data/data.json";
-import Section from "../../shared/layout/Section.astro";
-import Heading2 from "../../shared/text/Heading2.astro";
-import ButtonPrimary from "../../shared/button/ButtonPrimary.astro";
-import Heading3 from "../../shared/text/Heading3.astro";
 import { Icon } from "astro-icon/components";
-import Tag from "../../shared/tag/Tag.astro";
-import TagList from "../../shared/tag/TagList.astro";
-import Card from "../../shared/layout/Card.astro";
-import ButtonNeutral from "../../shared/button/ButtonNeutral.astro";
-import ProjectImage from "./ProjectImage.astro";
+import { projects } from "@/data/data.json";
+import ButtonNeutral from "@components/shared/button/ButtonNeutral.astro";
+import ButtonPrimary from "@components/shared/button/ButtonPrimary.astro";
+import Card from "@components/shared/layout/Card.astro";
+import Heading2 from "@components/shared/text/Heading2.astro";
+import Heading3 from "@components/shared/text/Heading3.astro";
+import IconAstro from "@/components/icons/IconAstro.astro";
+import ProjectImage from "@components/section/Projects/ProjectImage.astro";
+import Section from "@components/shared/layout/Section.astro";
+import SkillList from "@components/section/Projects/SkillList.astro";
+import Tag from "@components/shared/tag/Tag.astro";
 ---
 
-<Section>
+<Section id="projects">
 	<Heading2 content="Proyectos" />
 	<ul class="flex flex-wrap gap-10 *:flex-shrink *:flex-grow *:basis-96">
 		{
@@ -33,13 +34,36 @@ import ProjectImage from "./ProjectImage.astro";
 							<div class="mb-4 flex-grow space-y-2">
 								<Heading3 content={project.name} />
 								<p>{project.description}</p>
-								<div>
-									<TagList>
-										{project.stack.map((skill) => (
-											<Tag content={skill} />
-										))}
-									</TagList>
-								</div>
+								{(project.stack === undefined && (
+									<Tag content="Sin tecnologías" />
+								)) || (
+									<SkillList>
+										{project.stack.map((skill) => {
+											const size = 30;
+											const icon = skill
+												.toLowerCase()
+												.replace(/ /g, "");
+
+											const isAstro = icon === "astro";
+
+											if (isAstro) {
+												return (
+													<IconAstro size={size} />
+												);
+											} else {
+												return (
+													<Icon
+														name={`devicon:${icon}`}
+														class={
+															"drop-shadow-[0px_2px_2px_rgba(0,0,0,0.2)]"
+														}
+														size={size}
+													/>
+												);
+											}
+										})}
+									</SkillList>
+								)}
 							</div>
 							<div class="card-actions justify-end">
 								<ButtonNeutral
