@@ -62,7 +62,9 @@ import TagList from "@components/shared/tag/TagList.astro";
 						</ItemList>
 						<TagList>
 							{education.skills.map((highlight) => (
-								<Tag content={highlight} />
+								<li>
+									<Tag content={highlight} />
+								</li>
 							))}
 						</TagList>
 					</div>

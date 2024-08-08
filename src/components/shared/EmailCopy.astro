@@ -11,7 +11,11 @@ import { Icon } from "astro-icon/components";
 		{basics.email}
 	</span>
 	<div class="join flex *:rounded-t-none sm:*:rounded-t-btn">
-		<a class="btn join-item" href=`mailto:${basics.email}`>
+		<a
+			class="btn join-item"
+			aria-label="Enviar correo"
+			href=`mailto:${basics.email}`
+		>
 			<Icon name="ri:mail-fill" />
 		</a>
 		<div
@@ -19,7 +23,11 @@ import { Icon } from "astro-icon/components";
 			class="join-item tooltip tooltip-top tooltip-success lg:tooltip-right hover:before:opacity-0 hover:after:opacity-0"
 			data-tip="¡Copiado!"
 		>
-			<button class="btn join-item" onclick="copyToClipboard()">
+			<button
+				class="btn join-item"
+				aria-label="Copiar correo al portapapeles"
+				onclick="copyToClipboard()"
+			>
 				<Icon name="ri:file-copy-fill" />
 			</button>
 		</div>

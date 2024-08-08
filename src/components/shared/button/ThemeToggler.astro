@@ -3,17 +3,33 @@ import { Icon } from "astro-icon/components";
 ---
 
 <label
-	role="button"
+	id="theme-controller-label"
 	for="theme-controller"
 	class="btn swap btn-neutral swap-rotate"
+	aria-label="Toggle theme"
 >
 	<input
 		type="checkbox"
 		id="theme-controller"
+		name="theme-controller"
 		class="theme-controller"
 		data-toggle-theme="dark,light"
 		data-act-class="ACTIVECLASS"
+		aria-labelledby="theme-controller-label"
+		role="switch"
 	/>
-	<Icon id="moon-icon" name="ri:moon-fill" size={20} class="swap-off" />
-	<Icon id="sun-icon" name="ri:sun-fill" size={20} class="swap-on" />
+	<Icon
+		id="moon-icon"
+		name="ri:moon-fill"
+		size={20}
+		class="swap-off"
+		aria-hidden="true"
+	/>
+	<Icon
+		id="sun-icon"
+		name="ri:sun-fill"
+		size={20}
+		class="swap-on"
+		aria-hidden="true"
+	/>
 </label>

@@ -61,7 +61,9 @@ import TagList from "@components/shared/tag/TagList.astro";
 						</ItemList>
 						<TagList>
 							{work.skills.map((skill) => (
-								<Tag content={skill} />
+								<li>
+									<Tag content={skill} />
+								</li>
 							))}
 						</TagList>
 					</div>
