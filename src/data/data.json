@@ -107,7 +107,7 @@
 	],
 	"skills": [
 		{
-			"name": "HTML",
+			"name": "HTML5",
 			"icon": "devicon:html5",
 			"keywords": [
 				"Lenguaje de Marcado",
@@ -117,7 +117,7 @@
 			]
 		},
 		{
-			"name": "CSS",
+			"name": "CSS3",
 			"icon": "devicon:css3",
 			"keywords": [
 				"Estilo",
@@ -130,7 +130,7 @@
 			"name": "Bootstrap",
 			"icon": "devicon:bootstrap",
 			"keywords": [
-				"Framework CSS",
+				"Framework CSS3",
 				"Frontend",
 				"Diseño Responsivo",
 				"Componentes Web"
@@ -140,7 +140,7 @@
 			"name": "Tailwind CSS",
 			"icon": "devicon:tailwindcss",
 			"keywords": [
-				"Framework CSS",
+				"Framework CSS3",
 				"Frontend",
 				"Diseño Responsivo",
 				"Desarrollo Web"
@@ -304,7 +304,14 @@
 			"name": "Adoptify",
 			"isActive": true,
 			"description": "Plataforma web de adopción de mascotas donde refugios pueden dar a conocer a sus mascotas disponibles a posibles adoptantes. Este es un proyecto full-stack desarrollado por el grupo c19-42 durante el programa de simulación laboral de No Country.",
-			"stack": ["HTML", "CSS", "TypeScript", "Angular", "MySQL", "Java"],
+			"stack": [
+				"HTML5",
+				"CSS3",
+				"TypeScript",
+				"Angular",
+				"MySQL",
+				"Java"
+			],
 			"repository": "https://github.com/ignaciorevainera/c19-42-n-java-react/",
 			"deploy": "https://c19-42-n-java-react.vercel.app/"
 		},
@@ -313,8 +320,8 @@
 			"img-avif": "/src/assets/projects/blog-astro.avif",
 			"name": "Blog de Tecnología",
 			"isActive": true,
-			"description": "Blog de tecnología desarrollado con HTML, CSS y JavaScript. Cuenta con un diseño moderno y minimalista, y una estructura de carpetas organizada para facilitar la escalabilidad y mantenimiento del proyecto.",
-			"stack": ["HTML", "Tailwind CSS", "TypeScript", "Astro"],
+			"description": "Blog de tecnología desarrollado con HTML5, CSS3 y JavaScript. Cuenta con un diseño moderno y minimalista, y una estructura de carpetas organizada para facilitar la escalabilidad y mantenimiento del proyecto.",
+			"stack": ["HTML5", "Tailwind CSS", "TypeScript", "Astro"],
 			"repository": "https://github.com/ignaciorevainera/blog-astro",
 			"deploy": "https://blog-astro-black.vercel.app/"
 		},
@@ -325,8 +332,8 @@
 			"isActive": true,
 			"description": " Repositorio de un proyecto e-commerce de venta de plantas y productos de botánica, desarrollado por los integrantes del Grupo 16 de Codo a Codo.",
 			"stack": [
-				"HTML",
-				"CSS",
+				"HTML5",
+				"CSS3",
 				"JavaScript",
 				"Bootstrap",
 				"Python",
@@ -341,7 +348,7 @@
 			"name": "Minimalist Portfolio",
 			"isActive": true,
 			"description": "Portafolio digital en Astro y Tailwind CSS: responsive, optimizado para impresión y con navegación innovadora mediante paleta de comandos (Ctrl + K). Una experiencia de usuario única que destaca habilidades y proyectos con estilo y funcionalidad.",
-			"stack": ["HTML", "Tailwind CSS", "TypeScript", "Astro"],
+			"stack": ["HTML5", "Tailwind CSS", "TypeScript", "Astro"],
 			"repository": "https://github.com/ignaciorevainera/minimalist-portfolio",
 			"deploy": "https://minimalist-portfolio-dusky.vercel.app/"
 		},
@@ -351,7 +358,7 @@
 			"name": "Luxury",
 			"isActive": false,
 			"description": "Este proyecto es una página web para simular el sitio web de una concesionaria de autos de lujo.",
-			"stack": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+			"stack": ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
 			"repository": "https://github.com/ignaciorevainera/concesionaria-luxury",
 			"deploy": "https://concesionaria-luxury.vercel.app/"
 		}
