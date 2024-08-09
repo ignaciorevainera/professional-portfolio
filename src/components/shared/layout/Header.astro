@@ -6,7 +6,6 @@ import ThemeToggler from "@/components/shared/button/ThemeToggler.astro";
 export const links = [
 	{ name: "Work", href: "work", icon: "ri:suitcase-fill" },
 	{ name: "Education", href: "education", icon: "ri:book-3-fill" },
-	{ name: "Projects", href: "projects", icon: "ri:dashboard-fill" },
 	{ name: "Skills", href: "skills", icon: "ri:puzzle-2-fill" },
 	{ name: "About", href: "about", icon: "ri:user-fill" },
 	{ name: "Contact", href: "contact", icon: "ri:message-2-fill" },
@@ -14,7 +13,7 @@ export const links = [
 ---
 
 <ul
-	class="menu menu-horizontal sticky top-0 z-10 grid grid-cols-4 place-content-center gap-2 rounded-box rounded-t-none bg-base-300 p-3 sm:grid-cols-7"
+	class="menu menu-horizontal sticky top-0 z-10 grid grid-cols-3 place-content-center gap-2 rounded-box rounded-t-none bg-base-300 p-3 sm:grid-cols-6"
 >
 	{
 		links.map((link) => (
@@ -25,7 +24,7 @@ export const links = [
 			</li>
 		))
 	}
-	<li class="col-span-2 sm:col-span-1">
+	<li>
 		<ThemeToggler />
 	</li>
 </ul>
