@@ -2,9 +2,9 @@
 
 Aquí encontrarás una colección de mis proyectos más destacados, experimentos y todo lo relacionado con mi viaje como desarrollador frontend. Me apasiona diseñar y codificar experiencias de usuario que no solo sean visualmente atractivas, sino también funcionales y optimizadas.
 
-<img src="public/assets/readme/921_1x_shots_so.jpeg" alt="Vista de escritorio">
-<img src="public/assets/readme/384_1x_shots_so.jpeg" alt="Vista de proyectos">
-<img src="public/assets/readme/702_1x_shots_so.jpeg" alt="Vista desde teléfonos móviles">
+<img src="public/assets/readme/portfolio.webp" alt="Vista de escritorio">
+<img src="public/assets/readme/portfolio-projects.webp" alt="Vista de proyectos">
+<img src="public/assets/readme/portfolio-mobile.webp" alt="Vista desde teléfonos móviles">
 
 ## ✨ Características
 
