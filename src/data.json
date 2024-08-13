@@ -316,6 +316,16 @@
 			"deploy": "https://c19-42-n-java-react.vercel.app/"
 		},
 		{
+			"img-webp": "/src/assets/projects/angular-store.webp",
+			"img-avif": "/src/assets/projects/angular-store.avif",
+			"name": "Store con Carrito de Compras",
+			"isActive": false,
+			"description": " Tienda online conectada a la API  de fakestoreapi.com, con carrito de compras completamente funcional.",
+			"stack": ["HTML5", "CSS3", "TypeScript", "Angular"],
+			"repository": "https://github.com/ignaciorevainera/angular-store",
+			"deploy": "https://angular-store-one.vercel.app/"
+		},
+		{
 			"img-webp": "/src/assets/projects/blog-astro.webp",
 			"img-avif": "/src/assets/projects/blog-astro.avif",
 			"name": "Blog de Tecnología",
