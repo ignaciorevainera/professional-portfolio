@@ -2,12 +2,13 @@
 interface Props {
 	content?: string;
 	href?: string;
+	label?: string;
 }
 
-const { content, href } = Astro.props;
+const { content, href, label } = Astro.props;
 ---
 
-<a class="btn btn-secondary" href={href} target="_blank">
+<a aria-label={label} class="btn btn-secondary" href={href} target="_blank">
 	<slot name="icon" />
 	{content}
 </a>

@@ -9,6 +9,7 @@ import Heading3 from "@components/shared/text/Heading3.astro";
 import IconAstro from "@/components/icons/IconAstro.astro";
 import ProjectImage from "@components/section/Projects/ProjectImage.astro";
 import Section from "@components/shared/layout/Section.astro";
+import ButtonSecondary from "@/components/shared/button/ButtonSecondary.astro";
 ---
 
 <Section id="projects">
@@ -57,7 +58,7 @@ import Section from "@components/shared/layout/Section.astro";
 								</ul>
 							</div>
 							<div class="card-actions justify-end">
-								<ButtonNeutral
+								<ButtonSecondary
 									content="Repositorio"
 									href={project.repository}
 									label={`Repositorio ${project.name}`}
@@ -66,7 +67,7 @@ import Section from "@components/shared/layout/Section.astro";
 										name="ri:code-s-slash-fill"
 										slot={"icon"}
 									/>
-								</ButtonNeutral>
+								</ButtonSecondary>
 								<ButtonPrimary
 									content="Deploy"
 									href={project.deploy}
