@@ -302,7 +302,7 @@
 			"img-webp": "/src/assets/projects/adoptify.webp",
 			"img-avif": "/src/assets/projects/adoptify.avif",
 			"name": "Adoptify",
-			"isActive": true,
+			"isActive": false,
 			"description": "Plataforma web de adopción de mascotas donde refugios pueden dar a conocer a sus mascotas disponibles a posibles adoptantes. Este es un proyecto full-stack desarrollado por el grupo c19-42 durante el programa de simulación laboral de No Country.",
 			"stack": [
 				"HTML5",
@@ -329,7 +329,7 @@
 			"img-webp": "/src/assets/projects/blog-astro.webp",
 			"img-avif": "/src/assets/projects/blog-astro.avif",
 			"name": "Blog de Tecnología",
-			"isActive": true,
+			"isActive": false,
 			"description": "Blog de tecnología desarrollado con HTML5, CSS3 y JavaScript. Cuenta con un diseño moderno y minimalista, y una estructura de carpetas organizada para facilitar la escalabilidad y mantenimiento del proyecto.",
 			"stack": ["HTML5", "Tailwind CSS", "TypeScript", "Astro"],
 			"repository": "https://github.com/ignaciorevainera/blog-astro",
@@ -339,7 +339,7 @@
 			"img-webp": "/src/assets/projects/e-commerce.webp",
 			"img-avif": "/src/assets/projects/e-commerce.avif",
 			"name": "Tienda Online",
-			"isActive": true,
+			"isActive": false,
 			"description": " Repositorio de un proyecto e-commerce de venta de plantas y productos de botánica, desarrollado por los integrantes del Grupo 16 de Codo a Codo.",
 			"stack": [
 				"HTML5",
